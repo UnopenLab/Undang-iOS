@@ -19,8 +19,8 @@ class MainVC: UIViewController,UIWebViewDelegate {
     }
 
     func loadHTML(){
-        let url = URL(string : "http://undang.twpower.me:6231/")
-
+       let url = URL(string : "http://undang.twpower.me:6231/")
+      
         myWebView.addJavascriptInterface(JSInterface(viewController : self), forKey: "JSInterface");
         myWebView.loadRequest(URLRequest(url: url!))
         
