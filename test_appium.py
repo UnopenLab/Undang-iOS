@@ -16,3 +16,5 @@ def test_undang():
 
 	assert '지금 한강은' in driver.page_source
 	driver.quit()
+
+test_undang()
